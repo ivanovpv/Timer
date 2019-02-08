@@ -5,7 +5,7 @@ import java.util.TreeMap;
 public class RomanNumerals {
     //private final static TreeMap<Integer, String> map = new TreeMap<Integer, String>();
 
-    private static int[] intervals={0, 1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 100};
+    private static int[] intervals={0, 1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000};
     private static String[] numerals={"", "I", "IV", "V", "IX", "X", "XL", "L", "XC", "C", "CD", "D", "CM", "M"};
 
 
