@@ -72,5 +72,17 @@ public class RomanNumerals {
             return numerals[floorIndex];
         return numerals[floorIndex]+toRoman(number-intervals[floorIndex]);
     }
+    
+    public static int toArabic(String roman) {
+        int result = 0;
+        for (int i = intervals.length-1; i >= 0; i-- ) {
+            while (roman.indexOf(numerals[i]) == 0 && numerals[i].length() > 0) {
+                result += intervals[i];
+                roman = roman.substring(numerals[i].length());
+            }
+        }
+        return result;
+    }
+
 
 }
